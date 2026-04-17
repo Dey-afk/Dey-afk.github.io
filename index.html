@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aniket Portfolio</title>
+  <meta name="description" content="Aniket's portfolio showcasing GestureFlow and SureFit projects.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor"></div>
+  <header class="site-header glass" id="home">
+    <div class="nav-container">
+      <a href="#home" class="brand">Aniket</a>
+      <button id="menuToggle" class="menu-toggle" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section" id="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Aniket</h1>
+      <p class="hero-tagline">Building modern reactive web experiences at <strong>aniket.is-great.org</strong>, with C, C#, Node.js, HTML5, CSS, MySQL and MongoDB.</p>
+      <div class="hero-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+        <a href="#projects" class="button secondary">Explore projects</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="projects" id="projects">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <p>Interactive builds created for real users.</p>
+      </div>
+
+      <div class="project-showcase">
+        <div class="project-grid">
+          <article class="project-card glass animate-up" data-title="GestureFlow" data-description="Gesture-based web interaction interface for next-level navigation." data-url="https://gestureflow.talk4fun.net/">
+            <span class="badge live">Live</span>
+            <h3>GestureFlow</h3>
+            <p>Gesture-based web interaction interface for next-level navigation.</p>
+            <a href="https://gestureflow.talk4fun.net/" target="_blank" rel="noopener">Open live</a>
+          </article>
+
+          <article class="project-card glass animate-up" data-title="SureFit" data-description="Smart fitting solution with responsive UI and seamless experience." data-url="https://surefit.infinityfree.me/">
+            <span class="badge live">Live</span>
+            <h3>SureFit</h3>
+            <p>Smart fitting solution with responsive UI and seamless experience.</p>
+            <a href="https://surefit.infinityfree.me/" target="_blank" rel="noopener">Open live</a>
+          </article>
+        </div>
+
+        <aside class="project-preview glass animate-up">
+          <span class="project-badge">Live project view</span>
+          <h3 id="preview-title">GestureFlow</h3>
+          <p id="preview-description">Gesture-based web interaction interface for next-level navigation.</p>
+          <p id="preview-meta" class="preview-meta">Hover over a project card to preview live details and open the site instantly.</p>
+          <div class="preview-window">
+            <iframe id="preview-frame" src="https://gestureflow.talk4fun.net/" title="Live project preview" loading="lazy"></iframe>
+            <p class="preview-fallback">If the preview is blocked, use the live button below.</p>
+          </div>
+          <div class="preview-links">
+            <a id="preview-live" class="button" href="https://gestureflow.talk4fun.net/" target="_blank" rel="noopener">Open live site</a>
+            <a id="preview-details" class="button secondary" href="#projects">See project details</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="skills glass" id="skills">
+      <div class="section-header">
+        <h2>Core Skills</h2>
+        <p>Technology stack and languages I use to build full-stack solutions.</p>
+      </div>
+      <div class="skills-grid">
+        <span>C</span>
+        <span>C#</span>
+        <span>Node.js</span>
+        <span>HTML5</span>
+        <span>CSS</span>
+        <span>MySQL</span>
+        <span>MongoDB</span>
+      </div>
+    </section>
+
+    <section class="contact glass" id="contact">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>Reach out for collaborations, freelance work, or project ideas.</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="you@example.com" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+        </label>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Aniket · Hosted at aniket.is-great.org</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
